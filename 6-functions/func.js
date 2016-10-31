@@ -22,9 +22,6 @@ function multiply(a, b){
 var expression = function(a){
   console.log(a);
 }
-
-//expression("i love programming!! nah");
-
 // 4 - Write a function that calls the
 // function from #2 above. The first argument
 // should be provided by calling the
@@ -32,8 +29,9 @@ var expression = function(a){
 // by passing in a number of your choice.
 // This new function should console log the
 // results of calling function #2.
-function mainFunction(){
-
+function mainFunction(myFunct, a){
+  var number = myFunct();
+  console.log(multiply(number, a));
 }
 
-console.log(mainFunction(myFunct, 4));
+mainFunction(myFunct, 5);
