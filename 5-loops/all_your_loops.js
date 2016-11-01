@@ -11,6 +11,7 @@ for(var i = 0; i < 5; i++){
 // 2 - Write a while loop that runs
 // 3 times. Each iteration will decrease
 // the value of checkz by -2
+<<<<<<< HEAD
 i=0;
 while(i < 3)
 {
@@ -20,6 +21,11 @@ while(i < 3)
 
 
 //This is a for loop. How would you write it as a while loop?
+=======
+for(i = 0; i < 3; i++){
+  checkz -= 2;
+}
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab
 //console.log(checkz);
 
 // 3 - Summarize in English what this code is doing.
@@ -35,4 +41,8 @@ var total = 0;
 for (var i = 0; i < numbers.length; i++) {
   total += numbers[i];
 }
+<<<<<<< HEAD
 //console.log(total);
+=======
+console.log(total);
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab

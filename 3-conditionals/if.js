@@ -3,12 +3,18 @@
 // the two variables are equal
 var first = 3;
 var second = 5;
+<<<<<<< HEAD
 if(first === second){
   console.log("Hello");
 }
 //Best practice is to use ===, unless there is a
 // specific reason not to. That way you will
 // know if one of the values is a string.
+=======
+if(first == second){
+  console.log("Hello");
+}
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab
 
 // 2 - Expand your answer above to
 // console log "Goodbye" if

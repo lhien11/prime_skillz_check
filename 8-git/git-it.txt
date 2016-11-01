@@ -9,7 +9,10 @@ git add .
 git commit -m "I have made some updates"
 # Type the command to add a new remote to this repo with the name 'origin' pointing to the URL 'https://github.com/PrimeAcademy/my-new-repo.git'
 git remote add origin
+<<<<<<< HEAD
 YOu'll need the url after this: git remote add origin https://github.com/PrimeAcademy/my-new-repo.git
+=======
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab
 # Type the command for pushing all commits stored locally to the remote repo nicknamed origin
 git push origin master
 # Type the command to remove a file from the staging area

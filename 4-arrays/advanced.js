@@ -19,8 +19,16 @@ arr.sort();
 // 4 - Use the forEach method to
 // halve the value of each
 // number in the array.
+<<<<<<< HEAD
 arr.forEach(function(element, index){
   arr[index] = element / 2;
 });
 //You can leave out the theArray parameter here. becasue you are already calling it on arr.
 console.log(arr);
+=======
+arr.forEach(function(element, index, theArray){
+  theArray[index] = element / 2;
+});
+
+//console.log(arr);
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab

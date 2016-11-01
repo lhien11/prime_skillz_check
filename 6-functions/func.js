@@ -35,7 +35,10 @@ function mainFunction(myFunct, a){
 }
 
 mainFunction(myFunct, 5);
+<<<<<<< HEAD
 
 // Can also call a function as an argument:
 
 multiply(myFunct, 5);
+=======
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab

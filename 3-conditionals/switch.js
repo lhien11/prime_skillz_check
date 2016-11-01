@@ -25,4 +25,7 @@ switch(new Date().getDay()) {
 }
 
 //console.log(day);
+<<<<<<< HEAD
 //You could also just put console logs within each case.
+=======
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab

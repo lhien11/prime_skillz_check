@@ -8,8 +8,11 @@ $(document).ready(function(){
   $('ul').empty();
 
 });
+<<<<<<< HEAD
 
 
 // Read the directions on this one carefully. It looks like you missed step 1.
 // And then for step 3, how could delete, not just empty the 'ul', by selecting the 'h2'
 // instead of selecting the 'ul' directly.
+=======
+>>>>>>> a1184376f5d10bc8291bff3467fb07ddf9a4f7ab
