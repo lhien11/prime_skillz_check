@@ -1,0 +1,127 @@
+diff --git a/1-basics/operators.js b/1-basics/operators.js
+index 6a7f261..033de31 100755
+--- a/1-basics/operators.js
++++ b/1-basics/operators.js
+@@ -12,3 +12,5 @@ if(sigma === peeps){
+ } else {
+   console.log("sigma doesn't equal peeps");
+ }
++//Can do this with a single console log that will return a true or false boolean:
++console.log(sigma===peeps);
+diff --git a/1-basics/strings.js b/1-basics/strings.js
+index 931f6d9..e8ff7fa 100755
+--- a/1-basics/strings.js
++++ b/1-basics/strings.js
+@@ -6,6 +6,7 @@ phrase = "The rain in Spain falls gently on the plain";
+ console.log(phrase);
+ // 4 - Console log the word Spain by using the substring method
+ console.log(phrase.substring(0, phrase.length));
++//THis will return the whole string. How could you just log the word "Spain"?
+ 
+ // 5 - Append the value ". The end." to the phrase variable.
+ phrase += ". The end.";
+diff --git a/3-conditionals/if.js b/3-conditionals/if.js
+index 00d3fcc..7e24e7b 100755
+--- a/3-conditionals/if.js
++++ b/3-conditionals/if.js
+@@ -6,6 +6,9 @@ var second = 5;
+ if(first == second){
+   console.log("Hello");
+ }
++//Best practice is to use ===, unless there is a
++// specific reason not to. That way you will
++// know if one of the values is a string.
+ 
+ // 2 - Expand your answer above to
+ // console log "Goodbye" if
+diff --git a/3-conditionals/switch.js b/3-conditionals/switch.js
+index 4155351..7884c27 100755
+--- a/3-conditionals/switch.js
++++ b/3-conditionals/switch.js
+@@ -25,3 +25,4 @@ switch(new Date().getDay()) {
+ }
+ 
+ //console.log(day);
++//You could also just put console logs within each case.
+diff --git a/4-arrays/advanced.js b/4-arrays/advanced.js
+index d1a9cec..e2b2202 100755
+--- a/4-arrays/advanced.js
++++ b/4-arrays/advanced.js
+@@ -22,5 +22,5 @@ arr.sort();
+ arr.forEach(function(element, index, theArray){
+   theArray[index] = element / 2;
+ });
+-
++//You can leave out the theArray parameter here. becasue you are already calling it on arr.
+ //console.log(arr);
+diff --git a/5-loops/all_your_loops.js b/5-loops/all_your_loops.js
+index e389e13..d700cfe 100755
+--- a/5-loops/all_your_loops.js
++++ b/5-loops/all_your_loops.js
+@@ -14,6 +14,8 @@ for(var i = 0; i < 5; i++){
+ for(i = 0; i < 3; i++){
+   checkz -= 2;
+ }
++
++//This is a for loop. How would you write it as a while loop?
+ //console.log(checkz);
+ 
+ // 3 - Summarize in English what this code is doing.
+diff --git a/6-functions/func.js b/6-functions/func.js
+index 5dbe281..8599a15 100755
+--- a/6-functions/func.js
++++ b/6-functions/func.js
+@@ -35,3 +35,7 @@ function mainFunction(myFunct, a){
+ }
+ 
+ mainFunction(myFunct, 5);
++
++// Can also call a function as an argument:
++
++multiply(myFunct, 5);
+diff --git a/7-objects/literal.js b/7-objects/literal.js
+index a321b3e..b15c3a8 100755
+--- a/7-objects/literal.js
++++ b/7-objects/literal.js
+@@ -10,6 +10,7 @@ var prime = {
+   state = "Minnesota",
+   zip = "55431"
+ }
++//You can't use 'use' with this. What do you need ot separate keys and values?
+ 
+ // 2 - Using dot notation, create a
+ // new property for prime. This property
+@@ -26,3 +27,8 @@ prime.methodPrint = function () {
+ 		for ( var prop in prime ) {
+ 			console.log( prime[ prop ] );
+ 		};
++    //There are a few issues with this:
++    // -you are missing a curly bracket.
++    // -This will log the methods and the properties.
++    // -Also, the address won't have any spaces.
++    //How could you change this to log the complete address?
+diff --git a/8-git/git-it.txt b/8-git/git-it.txt
+index baac30b..c390e78 100755
+--- a/8-git/git-it.txt
++++ b/8-git/git-it.txt
+@@ -9,6 +9,7 @@ git add .
+ git commit -m "I have made some updates"
+ # Type the command to add a new remote to this repo with the name 'origin' pointing to the URL 'https://github.com/PrimeAcademy/my-new-repo.git'
+ git remote add origin
++YOu'll need the url after this: git remote add origin https://github.com/PrimeAcademy/my-new-repo.git
+ # Type the command for pushing all commits stored locally to the remote repo nicknamed origin
+ git push origin master
+ # Type the command to remove a file from the staging area
+diff --git a/9-jquery/scripts.js b/9-jquery/scripts.js
+index 4ac1cad..102e7ff 100755
+--- a/9-jquery/scripts.js
++++ b/9-jquery/scripts.js
+@@ -8,3 +8,8 @@ $(document).ready(function(){
+   $('ul').empty();
+ 
+ });
++
++
++// Read the directions on this one carefully. It looks like you missed step 1.
++// And then for step 3, how could delete, not just empty the 'ul', by selecting the 'h2'
++// instead of selecting the 'ul' directly.
